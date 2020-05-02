@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-function displayDescription(fileName = 'cpp.json') {
+function displayInfo(fileName) {
   fetch(`/projects/${fileName}`)
     .then((response) => response.json())
     .then((data) => {

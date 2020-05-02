@@ -83,8 +83,15 @@ li {
   padding: 0px;
 }
 
-#center {
+.center {
   margin-top: 10%;
+}
+
+pre code {
+  background-color: #bbbbbb;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
 }
 
 .headerLinks:hover {

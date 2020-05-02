@@ -1,23 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="/css/styles.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="/scripts/paragraphConfig.js"></script>
-    </head>
+    {{>info}}
 
     <body>
         {{>header}}
-        <div class="content">
-            <center id="center">
-                <div class="description"></div><br><br>
-
-                <div class="techniques"></div><br><br>
-
-                <div class="code"></div>
-            </center>
-        </div>
-
-        <script>displayDescription();</script>
+        {{>body}}
+        <script>displayInfo('cpp.json');</script>
     </body>
 </html>
