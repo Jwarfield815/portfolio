@@ -1,0 +1,5 @@
+{
+    "description": "descrip",
+    "techniques": "techniq",
+    "code": "import java.util.Scanner;\r\n\r\npublic class Binary\r\n{\r\n    public static void main(String[] args)\r\n    {\r\n        Scanner input = new Scanner(System.in);\r\n        \r\n        int bit = 1; \/\/bit positional value\r\n        int decimal = 0; \/\/decimal value\r\n        \r\n        \/\/prompt for and read in a binary number\r\n        System.out.print(\"Enter a binary number: \");\r\n        int binary = input.nextInt(); \/\/binary value\r\n        \r\n        \/\/convert to decimal equivalent\r\n        while(binary != 0)\r\n        {\r\n            decimal += binary % 10 * bit;\r\n            binary \/= 10;\r\n            bit *=2;\r\n        }\r\n        \r\n        System.out.printf(\"Decimal is: %d%n\", decimal);\r\n    }\r\n}"
+}
