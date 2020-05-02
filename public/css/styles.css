@@ -83,6 +83,10 @@ li {
   padding: 0px;
 }
 
+#center {
+  margin-top: 10%;
+}
+
 .headerLinks:hover {
   color: #555555;
 }
