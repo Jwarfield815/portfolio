@@ -1,0 +1,163 @@
+@import url('selectStyles.css');
+@import url('buttonStyles.css');
+
+html, body {
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'verdana';
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#hidden {
+  margin-top: 20px;
+  display: none;
+  font-size: 2em;
+}
+
+#info {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+#titleHead {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.question, .answer {
+  font-size: 1.5em;
+}
+
+.answer {
+  margin-bottom: 17px;
+}
+
+body {
+  padding: 30px;
+  background-image: linear-gradient(135deg, #5dac4d 0%, rgb(40, 112, 23) 100%);
+  box-sizing: border-box;
+}
+
+#vertAlign {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#intro {
+  margin-top: 10%;
+  margin-bottom: 10px;
+  font-size: 2em;
+  text-align: center;
+}
+
+#names {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+#names:hover {
+  color: #333333;
+}
+
+#linkContainer {
+  display: inline;
+}
+
+li {
+  margin: auto 15px;
+}
+
+#links li {
+  display: inline;
+  font-size: 1.5em;
+}
+
+#links {
+  padding: 0px;
+}
+
+.headerLinks:hover {
+  color: #555555;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  a {
+    text-decoration: underline;
+  }
+  
+  #titleHead {
+    font-size: 4em;
+  }
+  
+  .question, .answer {
+    font-size: 2em;
+  }
+  
+  .nameLink:hover {
+    color: #000000;
+  }
+  
+  #name {
+    margin-top: 30%;
+    text-decoration: none;
+  }
+
+  #names {
+    font-size: 1.5em;
+  }
+  
+  #names:hover {
+    color: #000000;
+  }
+  
+  li {
+    margin: auto;
+  }
+
+  .headerLinks {
+    font-size: 1em;
+  }
+  
+  .headerLinks:hover {
+    color: #000000;
+  }
+  
+  #another, #back {
+    width: 80%;
+  }
+  
+  #another:hover, #back:hover {
+    background: #ffffff;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  #first {
+    margin-right: 15px;
+  }
+
+  #nameDetails {
+    font-size: 1.5em;
+  }
+
+  #backButtonContainer {
+    text-align: center;
+  }
+}

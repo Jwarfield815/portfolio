@@ -1,0 +1,41 @@
+This project has two major parts, a research component that
+includes a Microsoft Word document, and a portfolio web site:
+
+Before compiling your portfolio, talk to at least two local
+employers that have software developers on staff, and make a
+list of the software development skills they seek in new
+employees. Create a one-page Microsoft Word document that
+summarizes what you learned, and how your development skills
+compare with those the employer seeks. Points will be deducted
+for spelling or grammar errors.
+
+Create a web site that showcases your original software
+development work in these areas:
+
+    C++ or Java
+    JavaScript/DHTML/AJAX
+    PHP (or other server-side scripting language)
+    SQL
+
+Create a separate page for each development environment, and
+include the following on each page:
+
+    A brief description of the project
+    Highlights of the programming techniques you used in the project
+    Your complete source code
+
+Your completed site should have a total of five web pages:
+
+    Home page
+    C++ or Java page
+    JavaScript/DHTML/AJAX page
+    PHP (or other server-side scripting language) page
+    SQL page
+
+You may add additional pages if you have additional projects
+you wish to showcase.
+
+Attach your completed Word document to this assignment in
+Blackboard, and enter the URL of your portfolio web site in
+the submission area. Click the "Write Submission" button to
+open the submission area. DO NOT TYPE IN THE COMMENTS BOX.
