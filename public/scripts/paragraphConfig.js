@@ -3,8 +3,8 @@ function displayInfo(fileName) {
   fetch(`/projects/${fileName}`)
     .then((response) => response.json())
     .then((data) => {
-      document.getElementsByClassName('description')[0].innerHTML = data.description;
-      document.getElementsByClassName('techniques')[0].innerHTML = data.techniques;
-      document.getElementsByClassName('code')[0].innerHTML = data.code;
+      document.getElementById('description').innerHTML = data.description;
+      document.getElementById('techniques').innerHTML = data.techniques;
+      document.getElementById('code').innerHTML = data.code;
     });
 }
