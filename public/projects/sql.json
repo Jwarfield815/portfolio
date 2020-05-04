@@ -1,5 +1,5 @@
 {
-    "description": "des",
-    "techniques": "tehc",
+    "description": "This was a query for a student database that would enroll a student in a class within the database",
+    "techniques": "I used SELECT and INSERT statements which are extrememly common and diverse in their usability. This is a procedure that was created, meaning it can be reused over and over, similar to a function in programming languages.",
     "code": "--This procedure will enroll a student in a class.\r\nCREATE OR REPLACE PROCEDURE enroll student\r\nin class (p_stu_id IN enrollments.stu_id%TYPE,\r\np_class_id IN enrollments.class_id%TYPE)\r\nIS\r\n v_times_enrolled PLS_INTEGER;\r\ne_already_enrolled EXCEPTION;\r\nBEGIN\r\nSELECT COUNT(*) INTO v_times_enrolled\r\nFROM enrollments\r\nWHERE class_id=p_class_id\r\nAND stu_id = p_stu_id;\r\nIF v_times_enrolled <> 0\r\nTHEN RAISE e_already_enrolled;\r\nEND IF;\r\nINSERT INTO enrollments\r\n(enroll_date, class_id, stu_id, status)\r\nVALUES\r\n(SYSDATE, p_class_id, p_stu_id, 'Enrolled');\r\nCOMMIT;\r\nEXCEPTION\r\nWHEN e_already_enrolled THEN\r\nDBMS OUTPUT.PUT_LINE('Student ' || p_stu_id ||\r\n' is already enrolled in class ' || p_class_id);\r\nEND enroll student in class;"
 }

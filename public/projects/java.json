@@ -1,5 +1,5 @@
 {
-    "description": "descrip",
-    "techniques": "techniq",
+    "description": "This is a program that converts numbers in base 10 counting structure (the counting structure that we use) into base 2 or binary.",
+    "techniques": "I used modulous along with a quick division and multiplication of the respective bases to return the number in binary. Modulous is a math function that you will rarely see outside of programming. Essentially, it divides two numbers and returns the remainder",
     "code": "import java.util.Scanner;\r\n\r\npublic class Binary\r\n{\r\n    public static void main(String[] args)\r\n    {\r\n        Scanner input = new Scanner(System.in);\r\n        \r\n        int bit = 1; \/\/bit positional value\r\n        int decimal = 0; \/\/decimal value\r\n        \r\n        \/\/prompt for and read in a binary number\r\n        System.out.print(\"Enter a binary number: \");\r\n        int binary = input.nextInt(); \/\/binary value\r\n        \r\n        \/\/convert to decimal equivalent\r\n        while(binary != 0)\r\n        {\r\n            decimal += binary % 10 * bit;\r\n            binary \/= 10;\r\n            bit *=2;\r\n        }\r\n        \r\n        System.out.printf(\"Decimal is: %d%n\", decimal);\r\n    }\r\n}"
 }
