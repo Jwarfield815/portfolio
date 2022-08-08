@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+#description, #techniques {
+  width: 55%;
+}
+
 #hidden {
   margin-top: 20px;
   display: none;
@@ -40,7 +44,7 @@ a {
 body {
   padding: 30px;
   box-sizing: border-box;
-  background-color: #5dac4d;
+  background-color: #4598a4;
 }
 
 #vertAlign {
@@ -59,7 +63,6 @@ body {
 
 .subtext {
   font-size: 1.2em;
-  
 }
 
 #names {
